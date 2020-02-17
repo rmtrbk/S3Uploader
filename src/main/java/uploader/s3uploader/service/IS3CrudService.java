@@ -10,13 +10,13 @@ import java.util.List;
  *
  */
 public interface IS3CrudService {
-	public void createFile(File src, String destinationFileName);
-	public void createFileWithMetadata(File src, String destinationFileName,
+	void createFile(File src, String destinationFileName);
+	void createFileWithMetadata(File src, String destinationFileName,
 										String author, String isbn);
 	
-	public File readFile(String filename);
-	public List<String> readFileMetadata(String filename);
+	File readFile(String filename);
+	List<String> readFileMetadata(String filename);
 	
-	public void updateFile(File src, String destinationFileName);
-	public void deleteFile(String filename);
+	void updateFile(File src, String destinationFileName);
+	void deleteFile(String filename);
 }
